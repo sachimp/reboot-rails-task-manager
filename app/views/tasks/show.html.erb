@@ -4,4 +4,6 @@
 
 <%= link_to "edit this task", edit_task_path %>
 <br>
+<%= link_to "delete this task", task_path(@task), data: {method: :delete} %>
+<br>
 <%= link_to "back to all", tasks_path %>
